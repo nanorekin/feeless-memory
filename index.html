@@ -64,8 +64,8 @@ button:focus-visible, .btn:focus-visible, summary:focus-visible { outline:3px so
 .front { transform:rotateY(180deg); border:2px solid rgba(255,255,255,0.35); }
 .coin { width:60cqw; aspect-ratio:1; border-radius:50%; display:flex; align-items:center; justify-content:center; border:3px solid rgba(255,255,255,0.65); font:800 19cqw/1 "JetBrains Mono",monospace; letter-spacing:-0.04em; box-shadow:inset 0 0 0 3px rgba(0,0,0,0.12); }
 .nm { font:600 12cqw/1 "Sora",sans-serif; }
-.card.matched .front { box-shadow:0 0 0 3px var(--good); }
-.card.matched .in { opacity:0.8; }
+.card.matched .front { box-shadow:0 0 0 3px var(--good); filter:saturate(0.75) brightness(0.88); }
+.card.matched .front::after { content:"\2713"; position:absolute; top:4cqw; right:6cqw; width:15cqw; height:15cqw; border-radius:50%; background:var(--good); color:#06210f; font:800 10cqw/15cqw "Sora",sans-serif; text-align:center; }
 .card.wrong .front { box-shadow:0 0 0 3px var(--bad); }
 .card:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
 :root[data-back="classic"] .back { background:linear-gradient(135deg,#1d3a6e,#0e1c3a); }
